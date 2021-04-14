@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/roboto/Roboto-Medium.ttf');
+}
+
+main{
+  display: flex;
+}
+
+main article{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 33%;
+  padding: .5em;
+  margin: .5em;
+  background-color: #dddddd;
+}
+
+
+article{
+}
+article h1{
+  display: block;
+  width: 100%;
+}
+
+article img{
+  width: 100%;
+  height: auto;
+}
+article p{
+  width: 100%;
+}
+.wrapper{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+nav ul{
+  list-style-type: none;
+}
+nav ul li{
+  display: inline-block;
+  padding: .2em 1em .2em 1em;
+  border: 1px solid black;
+  margin: 0 .5em 0 .5em;
+}
+
+h1, h2, h3, h4, h5, h6, nav{
+  font-family: 'Roboto';
+}

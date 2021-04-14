@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8" />
+      <title> Saludador </title>
+
+      <style>
+        body{
+          font-family: Helvetica, Verdana, sans-serif;
+        }
+        main{
+          display: block;
+          width: 75%;
+          margin: 0 auto;
+        }
+
+        input[type=text],
+        button{
+          line-height: 2em;
+          font-size: 1.6em;
+          padding: .5em;
+        }
+
+        #saludo{
+          margin-top: 2em;
+          padding: 1em;
+          border: 1px solid black;
+          font-size: 1.6em;
+        }
+      </style>
+    </head>
+
+    <body>
+      <main>
+        <h1>Generador de saludos</h1>
+
+          <form id="forma">
+              <input class="caja" type="text" id="nombre" placeholder="Escribe tu nombre">
+              <button type="button" onclick="generarSaludo()">Saludar!</button>
+          </form>
+
+          <div id="saludo">
+          </div>
+      </main>
+
+        <script type="text/javascript">
+
+            function generarSaludo(){
+              //obtenemos el valor introducido por el usuario en la forma
+              //el elemento de la forma esta identificado con el id 'nombre'
+              var nombre = document.getElementById("nombre").value;
+              //aquí concatenamos un string preestablecido con el valor de la variable nombre
+              var saludo = "<h2>Hola " + nombre + ' !</h2>';
+              //insertamos el valor de la variable saludo en el elemento
+              //identificado con el id 'saludo'
+              document.getElementById("saludo").innerHTML = saludo;
+            }
+
+        </script>
+    </body>
+</html>
